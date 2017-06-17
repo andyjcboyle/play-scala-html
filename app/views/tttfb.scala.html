@@ -1,0 +1,79 @@
+@(message: String)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is an HTML5 example.">
+        <meta name="keywords" content="HTML5, CSS3, JavaScript">
+        <title>This is the Title of the document</title>
+        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/main.css")">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="main_header">
+                <h1>This is the main title of the website</h1>
+            </header>
+            <nav id="main_menu">
+                <ul>
+                    <li>home</li>
+                    <li>photos</li>
+                    <li>videos</li>
+                    <li>contact</li>
+                </ul>
+            </nav>
+            <div id="container">
+                <section id="main_section">
+                    <article>
+                        <header>
+                            <h1>Title of post One</h1>
+                            <h2>subtitle of the post One</h2>
+                            <p class="text1">posted 12-10-2011</p>
+                        </header>
+                        This is the text of my first post
+                        <figure>
+                            <img src="@routes.Assets.versioned("images/messages.jpeg")">
+                            <figcaption>
+                                This is the image of the first post
+                            </figcaption>
+                        </figure>
+                        <footer>
+                            <p id="comments-a">comments (0)</p>
+                        </footer>
+                    </article>
+                    <article>
+                        <header>
+                            <h1>Title of post Two</h1>
+                            <h2>subtitle of the post Two</h2>
+                            <time datetime="2011-10-12">posted 12-10-2011</time>
+                            <p class="text1">posted 12-15-2011</p>
+                        </header>
+                        This is the text of my second post
+                        <footer>
+                            <address>
+                                <a href="http://www.andyboyle.io">Andy Boyle</a>
+                            </address>
+                            <p>comments (0)</p>
+                        </footer>
+                    </article>
+                    <article>
+                        Just testing some HTML5 elements.
+                        <span>My <mark>car</mark> is red</span><br/>
+                        Lets see some <em>emphasis</em><br/>
+                        This is <strong>strong</strong><br/>
+                        This is <b>bold</b><br/>
+                        This is <small>small</small><br/>
+                        Lets <cite>cite</cite> something
+                    </article>
+                </section>
+                <aside id="main_aside">
+                    <blockquote>Artictle number one</blockquote>
+                    <blockquote>Artictle number two</blockquote>
+                </aside>
+            </div>
+            <footer id="main_footer">
+                Copyright &copy; 2010-2011
+            </footer>
+        </div>
+    </body>
+</html>
